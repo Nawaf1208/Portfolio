@@ -200,24 +200,22 @@ p {
     color: var(--accent);
     filter: drop-shadow(0 2px 8px var(--accent));
 }
-/* Project content with image layout */
-.project-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-top: 1.5rem;
-    align-items: flex-start;
+/* Stack used styling */
+.stack-used {
+    margin: 0.5rem 0 1.5rem 0;
 }
-.project-text {
-    flex: 1;
-    min-width: 300px;
+.stack-used img {
+    margin-right: 8px;
+    margin-bottom: 5px;
 }
-.project-image {
-    flex: 1;
-    min-width: 300px;
+/* MERN Project specific styling */
+.mern-project {
+    padding-bottom: 1.5rem;
+}
+.architecture-image-container {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    margin: 1.5rem 0;
 }
 .architecture-image {
     max-width: 100%;
@@ -230,6 +228,13 @@ p {
 .architecture-image:hover {
     transform: translateY(-5px) scale(1.02);
     box-shadow: 0 12px 32px rgba(20,110,180,0.2);
+}
+.project-description {
+    margin-top: 1.5rem;
+}
+.project-description p {
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
 }
 ul {
     padding-left: 1.5rem;
@@ -316,16 +321,11 @@ footer {
     section {
         padding: 1.2rem;
     }
-    .project-content {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-    .project-text, .project-image {
-        min-width: 100%;
+    .architecture-image-container {
+        margin: 1rem 0;
     }
     .architecture-image {
-        max-width: 90%;
-        margin: 0 auto;
+        max-width: 100%;
     }
 }
 @media (max-width: 768px) {
@@ -349,8 +349,10 @@ footer {
     .skills-container {
         gap: 0.5rem;
     }
-    .project-content {
-        gap: 1rem;
+    .stack-used img {
+        margin-right: 5px;
+        margin-bottom: 5px;
+        height: 18px;
     }
 }
 @media (max-width: 500px) {
@@ -370,10 +372,11 @@ footer {
         font-size: 0.8rem;
         padding: 0.3rem 0.7rem;
     }
-    .project-content {
-        gap: 0.8rem;
+    .stack-used img {
+        height: 16px;
+        margin-right: 4px;
     }
     .architecture-image {
-        max-width: 100%;
+        border-radius: 8px;
     }
 }
