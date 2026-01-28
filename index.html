@@ -130,23 +130,25 @@
         <section id="projects">
             <h2>Projects</h2>
             <div class="project">
-                <h3><i class="fas fa-cloud"></i> Three-Tier AWS Architecture with Terraform</h3>
-                <p><strong><img src="https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white" style="height:20px; vertical-align:middle; margin-right:6px; border-radius:10px">  
+                <h3><i class="fas fa-cloud"></i> 3-Tier AWS Architecture using Terraform</h3>
+                <p><strong><img src="https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white" style="height:20px; vertical-align:middle; margin-right:6px; border-radius:10px">
                     | <img src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white" style="height:20px; vertical-align:middle; margin-right:6px; border-radius:10px">
                 </strong></p>
 
                 <div class="architecture-image-container">
-                    <img src="3Tier.png" alt="Three-Tier AWS Architecture with Terraform Diagram" class="architecture-image">
+                    <img src="3Tier.png" alt="3-Tier AWS Architecture using Terraform Diagram" class="architecture-image">
                 </div>
-                
-                <p>Designed and deployed a highly available, scalable, fault-tolerant three-tier cloud infrastructure on AWS using Terraform.</p>
+
+                <div class="project-description">
+                <p>Engineered a highly available, modular three-tier infrastructure on AWS using Terraform, featuring automated scaling and strict network isolation.</p>
                 <ul>
-                    <li>Designed and implemented VPC with public and private subnets across multiple Availability Zones</li>
-                    <li>Configured Application Load Balancer, Auto Scaling Groups, and RDS database with read replicas</li>
-                    <li>Implemented security groups, IAM roles, and network ACLs for secure infrastructure</li>
-                    <li>Used Terraform modules for reusable and maintainable infrastructure code</li>
-                    <li>Set up monitoring and logging with CloudWatch and S3 for audit trails</li>
+                    <li>Designed a custom VPC with 6 subnets across multiple Availability Zones for High Availability.</li>
+                    <li>Implemented Security Group Chaining to ensure the Database tier is only reachable by the App tier.</li>
+                    <li>Developed modularized Terraform code (VPC, EC2/ASG, RDS) for reusable and scalable infrastructure.</li>
+                    <li>Deployed an Application Load Balancer and Auto Scaling Group to manage dynamic traffic demands.</li>
+                    <li>Isolated sensitive data within private subnets using NAT Gateways for secure outbound communication.</li>
                 </ul>
+                </div>
             </div>
 
             <div class="project">
