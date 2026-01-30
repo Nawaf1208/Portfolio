@@ -158,15 +158,22 @@
                     | <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=Prometheus&logoColor=white" style="height:20px; vertical-align:middle; margin-right:6px; border-radius:10px"> 
                     | <img src="https://img.shields.io/badge/grafana-%23F46800.svg?style=for-the-badge&logo=grafana&logoColor=white" style="height:20px; vertical-align:middle; margin-right:6px; border-radius:10px">
                 </strong></p>
-                <p>End-to-end automated DevOps pipeline implementing CI/CD best practices with containerization, monitoring, and visualization.</p>
+
+                <div class="architecture-image-container">
+                    <img src="DevOps-Pipeline.png" alt="DevOps CI/CD Pipeline" class="architecture-image">
+                </div>
+
+                <div class="project-description">
+                <p>Architected a professional-grade DevOps ecosystem integrating automated CI/CD workflows with a full-stack observability suite.</p>
                 <ul>
-                    <li>Built automated CI/CD pipeline with Jenkins for build, test, and deployment processes</li>
-                    <li>Containerized applications using Docker and managed images in private registry</li>
-                    <li>Implemented comprehensive monitoring with Prometheus metrics collection</li>
-                    <li>Created real-time dashboards and alerting systems with Grafana</li>
-                    <li>Integrated GitHub webhooks for automatic pipeline triggering on code commits</li>
-                    <li>Configured health checks and automated rollback mechanisms</li>
+                    <li>Engineered a Declarative Jenkins Pipeline to automate the lifecycle of code checkout, Docker image building, and pushing to a private registry.</li>
+                    <li>Optimized containerization using multi-layer Dockerfiles based on Alpine Linux to ensure lightweight, secure, and fast-building application images.</li>
+                    <li>Developed a Local Docker Registry on port 5000 to manage private image storage and secure deployment flows.</li>
+                    <li>Implemented Full-Stack Observability by integrating the prom-client library into a Node.js backend to expose custom performance metrics.</li>
+                    <li>Configured Prometheus & Grafana to scrape application data every 15 seconds, visualizing real-time external memory usage and system health.</li>
+                    <li>Automated environment lifecycle management with custom shell scripts for Docker resource pruning and clean environment resets.</li>
                 </ul>
+                </div>
             </div>
             
             <div class="project">
