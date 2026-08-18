@@ -5,9 +5,9 @@
   --bg:         #0a0a09;
   --bg-raised:  #121210;
   --line:       #2a2a26;
-  --accent:     #b8823a;   /* muted bronze / hanko seal */
-  --accent-red: #a8402f;   /* stamp red, used sparingly */
-  --on-accent:  #0a0a09;   /* text color when sitting on --accent */
+  --accent:     #b8823a;   
+  --accent-red: #a8402f;   
+  --on-accent:  #0a0a09;
   --nav-bg:     rgba(10,10,9,.7);
 
   --display: "Fraunces", Georgia, serif;
